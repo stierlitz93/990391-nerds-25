@@ -5,103 +5,68 @@
     <title>HTML Academy: Нёрдс</title>
   </head>
   <body>
-	<div class="header">
-		<div class="logo">
+	<header>
+		<a class="header__logo" href="#">
 			<img src="img\nerds-logo.png" alt="">
+		</a>
+		<ul class="header__menu">
+			<li class="header__menu__item"><a class="header__menu__link" href="#">студия</a></li>
+			<li class="header__menu__item"><a class="header__menu__link" href="#">клиенты</a></li>
+			<li class="header__menu__item"><a class="header__menu__link" href="#">магазин</a></li>
+			<li class="header__menu__item"><a class="header__menu__link" href="#">контакты</a></li>
+		</ul>
+		<a class="header__recycle" href="#">корзина</a>
+	</header>
+	<main>
+		<h1 class="main__headline">Магазин готовых шаблонов</h1>
+		<div class="main__sort">
+			<h2 class="main__title">сортировать</h2>
+			<a class="main__link" href="#">по цене</a>
+			<a class="main__link" href="#">по типу</a>
+			<a class="main__link" href="#">по названию</a>
 		</div>
-		<div class="navigation">
-			<ul>
-				<li><a href="#">студия</a></li>
-				<li><a href="#">клиенты</a></li>
-				<li><a href="#">магазин</a></li>
-				<li><a href="#">контакты</a></li>
+			<ul class="main-list">
+				<li class="main-list__item">
+					<img src="img\100x200" alt="">
+					<div class="main-list__item--active">
+						<h2 class="main-list__title">sedona</h2>
+						<p class="main-list__description">Информационный сайт для туристов</p>
+						<a class="main-list__link" href="#">9900р</a>
+					</div>
+				</li>
+				<li class="main-list__item"><img src="img\100x200" alt=""></li>
+				<li class="main-list__item"><img src="img\100x200" alt=""></li>
+				<li class="main-list__item"><img src="img\100x200" alt=""></li>
+				<li class="main-list__item"><img src="img\100x200" alt=""></li>
+				<li class="main-list__item"><img src="img\100x200" alt=""></li>
 			</ul>
-		</div>
-		<div class="recycle">
-			<img src="img\10x10" alt="">
-			<a href="#">корзина</a>
-		</div>
-	</div>
-	<div class="main">
-		<div class="main-header">
-			<h1>Магазин готовых шаблонов</h1>
-		</div>
-		<div class="filter">
-			<div class="filter-cost">
-				<h2>стоимость</h2>
-				<div class="roller"></div>
-				<p>от</p>
-				<div class="filter-before"></div>
-				<p>до</p>
-				<div class="filter-after"></div>
-			</div>
-			<div class="filter-grid">
-				<ul>
-					<li>Адаптивная</li>
-					<li>Фиксированная</li>
-					<li>Резиновая</li>
-				</ul>
-			</div>
-			<div class="filter-features">
-				<ul>
-					<li>слайдер</li>
-					<li>блок преимуществ</li>
-					<li>новости</li>
-					<li>галерея</li>
-					<li>корзина</li>
-				</ul>
-			</div>
-			<button>показать</button>
-		</div>
-		<div class="sort">
-			<h2>сортировать</h2>
-			<div>
-				<p>по цене</p>
-				<p>по типу</p>
-				<p>по названию</p>
-			</div>
-		</div>
-		<div class="list">
-			<ul>
-				<li><div class="option"></div>><img src="img\100x200" alt=""></li>
-				<li><div class="option"></div>><img src="img\100x200" alt=""></li>
-				<li><div class="option"></div>><img src="img\100x200" alt=""></li>
-				<li><div class="option"></div>><img src="img\100x200" alt=""></li>
-				<li><div class="option"></div>><img src="img\100x200" alt=""></li>
-				<li><div class="option"></div>><img src="img\100x200" alt=""></li>
+			<ul class="pagination">
+				<li class="pagination__item"><a class="pagination__link" href="#">1</a></li>
+				<li class="pagination__item"><a class="pagination__link" href="#">2</a></li>
+				<li class="pagination__item"><a class="pagination__link" href="#">3</a></li>
+				<li class="pagination__item"><a class="pagination__link" href="#">следующая</a></li>
 			</ul>
-		</div>
-		<div class="nav-list">
-			<ul>
-				<li><a href="#">1</a></li>
-				<li><a href="#">2</a></li>
-				<li><a href="#">3</a></li>
-				<li><a href="#">следующая</a></li>
-			</ul>
-		</div>
-	</div>
-	<div class="footer">
+	</main>
+	<footer>
 		<div class="map">
-			<div class="contact">
-				<p>nerds design studio</p>
-				<p>191186, Санкт-Петербург,  ул. Б. Конюшенная, д. 19/8  тел. +7 (999)999-99-99</p>
-				<a href="#">напишите нам</a>
-			</div>
-			<div class="map-touch">
-				<img src="logo" alt="">
-			</div>
+			<address>
+				<h2 class="address__title">nerds design studio</h2>
+				<p class="address__description">191186, Санкт-Петербург,  ул. Б. Конюшенная, д. 19/8  тел.</p>
+				<a class="address__tel" href="#">+7 (999)999-99-99</a>
+				<a class="address__submit" href="#">напишите нам</a>
+			</address>
 		</div>
 		<div class="footer-down">
-			<div class="social">
-				<div class="vk"><a href="#"></a></div>
-				<div class="fb"><a href="#"></a></div>
-				<div class="in"><a href="#"></a></div>
-			</div>
+			<ul class="social">
+				<li class="social__vk"><a class="social__link" href="#"></a></li>
+				<li class="social__fb"><a class="social__link"  href="#"></a></li>
+				<li class="social__in"><a class="social__link"  href="#"></a></li>
+			</ul>
 			<div class="slogan">
-				<p>Давайте дружить, это выгодно!</p>
-				<p>Скидка 10% для друзей из социальных сетей.</p>
+				<p><strong>Давайте дружить, это выгодно!</strong>
+				Скидка 10% для друзей из социальных сетей.</p>
 			</div>
 		</div>
-	</div>
+	</footer>
   </body>
 </html>
