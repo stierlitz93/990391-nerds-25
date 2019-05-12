@@ -5,113 +5,60 @@
     <title>HTML Academy: Нёрдс</title>
   </head>
   <body>
-	<div class="header">
-		<div class="logo">
+	<header>
+		<a class="header__logo" href="#">
 			<img src="img\nerds-logo.png" alt="">
-		</div>
-		<div class="navigation">
-			<ul>
-				<li><a href="#">студия</a></li>
-				<li><a href="#">клиенты</a></li>
-				<li><a href="#">магазин</a></li>
-				<li><a href="#">контакты</a></li>
+		</a>
+		<ul class="header__menu">
+			<li class="header__menu__item"><a class="header__menu__link" href="#">студия</a></li>
+			<li class="header__menu__item"><a class="header__menu__link" href="#">клиенты</a></li>
+			<li class="header__menu__item"><a class="header__menu__link" href="#">магазин</a></li>
+			<li class="header__menu__item"><a class="header__menu__link" href="#">контакты</a></li>
+		</ul>
+		<a class="header__recycle" href="#">корзина</a>
+	</header>
+	<main>
+		<section class="main-job">
+			<ul class="main-job__list">
+				<li class="main-job__item"><img src="#" alt=""></li>
+				<li class="main-job__item"><h2 class="main-job__title">веб-сайты</h2></li>
+				<li class="main-job__item"><p class="main-job__description">Мир никогда не будет прежним после того как увидит ваш сайт!</p></li>
+				<li class="main-job__item"><a class="main-job__link" href="#">Заказать</a></li>
 			</ul>
-		</div>
-		<div class="recycle">
-			<img src="img\10x10" alt="">
-			<a href="#">корзина</a>
-		</div>
-	</div>
-	<div class="main">
-		<section>
-			<div class="slider">
-				<h1>Долго, дорого,  скрупулезно.</h1>
-				<p>Математически выверенный дизайн  для вашего сайта или мобильного приложения.</p>
-				<div><a href="#">Узнать больше</a></div>
-				<ul>
-					<li></li>
-					<li></li>
-					<li></li>
-				</ul>
-			</div>
+			<ul class="main-job__list">
+				<li class="main-job__item"><img src="#" alt=""></li>
+				<li class="main-job__item"><h2 class="main-job__title">приложения</h2></li>
+				<li class="main-job__item"><p class="main-job__description">Покорите топ-10 приложений в AppStore и Google Play</p></li>
+				<li class="main-job__item"><a class="main-job__link" href="#">Заказать</a></li>
+			</ul>
+			<ul class="main-job__list">
+				<li class="main-job__item"><img src="#" alt=""></li>
+				<li class="main-job__item"><h2 class="main-job__title">презентации</h2></li>
+				<li class="main-job__item"><p class="main-job__description">Вы даже не подозреваете,  насколько вы изумительны!</p></li>
+				<li class="main-job__item"><a class="main-job__link" href="#">Заказать</a></li>
+			</ul>
 		</section>
-		<section class="ourMaker">
-			<div>
-				<img src="#" alt="">
-				<h2>веб-сайт</h2>
-				<p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-				<div><a href="#">Заказать</a></div>
-			</div>
-			<div>
-				<img src="#" alt="">
-				<h2>приложения</h2>
-				<p>Покорите топ-10 приложений в AppStore и Google Play</p>
-				<div><a href="#">Заказать</a></div>
-			</div>
-			<div>
-				<img src="#" alt="">
-				<h2>презентации</h2>
-				<p>Вы даже не подозреваете,  насколько вы изумительны!</p>
-				<div><a href="#">Заказать</a></div>
-			</div>
-		</section>
-		<section>
-			<div class="part-left">
-				<h2>Мы — маленькая, но гордая дизайн-студия из Краснодара.</h2>
-				<p>Исповедуем принципы минимализма и чистоты. Ставим математически. Исповедуем принципы минимализма и чистоты. Ставим математически.</p>
-				<h3>Выполняем заказы на разработку:</h3>
-				<ul>
-					<li>Веб-сайтов любой сложности</li>
-					<li>Мобильные приложения для ios и android</li>
-					<li>Слайдшоу и видео для корпоративных презентаций</li>
-				</ul>
-			</div>
-			<div class="part-right">
-				<img src="#" alt="">
-				<p>с 2004 года Любим точность во всем:</p>
-				<table>
-					<tr>
-						<td>146%</td>
-						<td>100%</td>
-						<td>50%</td>
-					</tr>
-					<tr>
-						<td>Уровень самоотдачи</td>
-						<td>Соблюдение  сроков</td>
-						<td>Минимальная предоплата</td>
-					</tr>
-				</table>
-			</div>
-			<div class="partners">
-				<img src="#" alt=""><a href="">html academy</a></img>
-				<img src="#" alt=""><a href="">barbershop borodinski</a></img>
-				<img src="#" alt=""><a href="">pink</a></img>
-				<img src="#" alt=""><a href="">mishka</a></img>
-			</div>
-		</section>
-	</div>
-	<div class="footer">
+	</main>
+	<footer>
 		<div class="map">
-			<div class="contact">
-				<p>nerds design studio</p>
-				<p>191186, Санкт-Петербург,  ул. Б. Конюшенная, д. 19/8  тел. +7 (999)999-99-99</p>
-				<a href="#">напишите нам</a>
-			</div>
-			<div class="map-touch">
-				<img src="logo" alt="">
-			</div>
+			<address>
+				<h2 class="address__title">nerds design studio</h2>
+				<p class="address__description">191186, Санкт-Петербург,  ул. Б. Конюшенная, д. 19/8  тел.</p>
+				<a class="address__tel" href="#">+7 (999)999-99-99</a>
+				<a class="address__submit" href="#">напишите нам</a>
+			</address>
 		</div>
 		<div class="footer-down">
-			<div class="social">
-				<div class="vk"><a href="#"></a></div>
-				<div class="fb"><a href="#"></a></div>
-				<div class="in"><a href="#"></a></div>
-			</div>
+			<ul class="social">
+				<li class="social__vk"><a class="social__link" href="#"></a></li>
+				<li class="social__fb"><a class="social__link"  href="#"></a></li>
+				<li class="social__in"><a class="social__link"  href="#"></a></li>
+			</ul>
 			<div class="slogan">
-				<p>Давайте дружить, это выгодно!</p>
-				<p>Скидка 10% для друзей из социальных сетей.</p>
+				<p><strong>Давайте дружить, это выгодно!</strong>
+				Скидка 10% для друзей из социальных сетей.</p>
 			</div>
 		</div>
-	</div>
+	</footer>
   </body>
 </html>
