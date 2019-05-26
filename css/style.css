@@ -1,0 +1,156 @@
+body{
+	margin:0;
+	padding:0;
+	font-family:"Roboto", Arial, sans-serif;
+	font-size:14px;
+	line-height:24px;
+	font-weight:700;
+	color:#000;
+	text-transform:uppercase;
+	background-color:#F2F2F2;
+}
+
+a{
+	text-decoration:none;
+}
+/* header */
+.header__logo:hover{
+	opacity:0.8;
+}
+.header__logo:focus{
+	opacity:0.3;
+}
+.header__menu, .header__recycle{
+	font-size:16px;
+	color:#000;
+	line-height:30px;
+	list-style:none;
+}
+
+.header__menu a,
+.header__recycle a{
+	color:#000;
+}
+
+.header__menu a:hover,
+.header__recycle:hover{
+	color:#FB565A;
+}
+
+.header__menu a:focus,
+.header__recycle:focus{
+	color:rgba(0, 0, 0, 0.3);
+}
+
+.header__menu a:active,
+.header__recycle:active{
+	border-bottom:2px solid red;
+}
+/* main */
+.main-job__list{
+	list-style:none;
+}
+.main-job__title{
+	text-transform:uppercase;
+	font-weight:bold;
+	font-size:24px;
+	line-height:30px;
+}
+.main-job__description{
+	font-size:16px;
+	line-height:24px;
+	color:#283136;
+}
+.main-job__link{
+	font-size:16px;
+	line-height:18px;
+	color:#fff;
+}
+.red{
+	background-color:#FB565A;
+}
+.green{
+	background-color:#00CA74;
+}
+.yellow{
+	background-color:#EFC84A;
+}
+.red:hover{
+	background-color:#E74246;
+}
+.green:hover{
+	background-color:#00BC6C;
+}
+.yellow:hover{
+	background-color:#EAB534;
+}
+.red:focus{
+	background-color:#D7373B;
+}
+.green:focus{
+	background-color:#00AA62;
+}
+.yellow:focus{
+	background-color:#E5A722;
+}
+/* footer */
+footer{
+	background-color:#fff;
+}
+.social{
+	list-style:none;
+}
+.social__link{
+	background-color:#E1E1E1;
+}
+.social__link:hover{
+	background-color:#E74246;
+}
+.social__link:focus{
+	background-color:#D7373B;
+}
+.social__link:focus img{
+	opacity:0.3;
+}
+
+.slogan{
+	font-size:16px;
+	line-height:22px;
+	color:#444;
+}
+.slogan strong{
+	font-size:36px;
+	font-weight:bold;
+	line-height:36px;
+	color:#000;
+}
+
+/* main catalog*/
+.main__headline{
+	font-size:55px;
+	text-transform:none;
+	line-height:55px;
+	color:#000;
+}
+main{
+	background-color:#fff;
+}
+.filter-form legend{
+	font-size:18px;
+	line-height:30px;
+	font-weight:bold;
+	color:#000;
+}
+.filter-form label{
+	font-size:16px;
+	line-height:20px;
+	color:#283136;
+}
+.filter-form input{
+	opacity:0.4;
+	background-color:#4D4D4D;
+}
+.filter-form input:hover{
+	opacity:1;
+	background-color:#4D4D4D;
+}
