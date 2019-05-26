@@ -31,40 +31,50 @@
 				<img class="main__sort__ico" src="img/icon-up-dir.svg" alt="">
 			</a>
 		</div>
-		<section class="filter">
+		<div class="filter">
 		<form class="filter-form" action="" type="post">
+			<fieldset>
+			<legend>Сетка:</legend>
 			<p>
-			<h3>Стоимость:</h3>
-			<label>
-				<input type="radio" name="grid">Адаптивная
-			</label>
-			<label>
-				<input type="radio" name="grid">Фиксированная
-			</label>
-			<label>
-				<input type="radio" name="grid">Резиновая
-			</label>
+			<input type="radio" name="grid" id="adaptiv-grid">
+			<label for="adaptiv-grid">Адаптивная</label>
 			</p>
 			<p>
-			<h3>Особенности:</h3>
-			<label>
-				<input type="checkbox" name="slider">Слайдер
-			</label>
-			<label>
-				<input type="checkbox" name="advantage">Блок преимуществ
-			</label>
-			<label>
-				<input type="checkbox" name="news">Новости
-			</label>
-			<label>
-				<input type="checkbox" name="galery">Галерея
-			</label>
-			<label>
-				<input type="checkbox" name="cart">Корзина
-			</label>
+			<input type="radio" name="grid" id="fix-grid">
+			<label for="fix-grid">Фиксированная</label>
 			</p>
+			<p>
+			<input type="radio" name="grid" id="ruber-grid">
+			<label for="ruber-grid">Резиновая</label>
+			</p>
+			</fieldset>
+
+			<fieldset>
+			<legend>Особенности:</legend>
+			<p>
+			<input type="checkbox" name="slider" id="features-slider">
+			<label for="features-slider">Слайдер</label>
+			</p>
+			<p>
+			<input type="checkbox" name="advantage" id="features-advantage">
+			<label for="features-advantage">Блок преимуществ</label>
+			</p>
+			<p>
+			<input type="checkbox" name="news" id="features-news">
+			<label for="features-news">Новости</label>
+			</p>
+			<p>
+			<input type="checkbox" name="galery" id="features-galery">
+			<label for="features-galery">Галерея</label>
+			</p>
+			<p>
+			<input type="checkbox" name="cart" id="features-cart">
+			<label for="features-cart">Корзина</label>
+			</p>
+			</fieldset>
+			<button>показать</button>
 		</form>
-		</section>
+		</div>
 			<ul class="main-list">
 				<li class="main-list__item">
 					<img src="img\img-sedona.jpg" alt="">
@@ -129,7 +139,7 @@
 					<a class="pagination__link" href="#">следующая</a>
 				</li>
 			</ul>
-		<section class="feedback">
+		<div class="feedback">
 		<h2>Напишите нам</h2>
 		<form class="feedback-form" action="" method="post">
 			<label>Ваше имя:
@@ -144,7 +154,7 @@
 			<input type="submit">
 			<button type="button">закрыть</button> 
 		</form>
-		</section>
+		</div>
 	</main>
 	<footer>
 		<div class="map">
