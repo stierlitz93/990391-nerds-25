@@ -154,3 +154,64 @@ main{
 	opacity:1;
 	background-color:#4D4D4D;
 }
+.form-button{
+	font-size: 16px;
+	line-height: 18px;
+	background-color: #eee;
+}
+.form-button:hover{
+	font-size: 16px;
+	line-height: 18px;
+	background-color: #dfdfdf;
+}
+.form-button:focus{
+	font-size: 16px;
+	line-height: 18px;
+	background-color: #d5d5d5;
+	color:rgba(0,0,0,0.3);
+}
+.main-list__item{
+	list-style: none;
+}
+.main-list__title-link{
+	font-size: 18px;
+	font-weight: bold;
+	line-height: 30px;
+	color: black;
+}
+.main-list__title-link:hover{
+	font-size: 18px;
+	font-weight: bold;
+	line-height: 30px;
+	color: #fb565a;
+}
+.main-list__title-link:focus{
+	font-size: 18px;
+	font-weight: bold;
+	line-height: 30px;
+	color: rgba(0, 0, 0, 0.3);
+}
+.main-list__description{
+	font-size: 16px;
+	line-height: 18px;
+	color:#666;
+	text-transform: none;
+}
+.main-list__link{
+	font-size: 16px;
+	line-height: 18px;
+	color:#fff;
+	background-color: #fb565a;
+}
+.main-list__link:hover{
+	font-size: 16px;
+	line-height: 18px;
+	color:#fff;
+	background-color: #e74246;
+}
+.main-list__link:focus{
+	font-size: 16px;
+	line-height: 18px;
+	color:#fff;
+	background-color: #d7373b;
+}
