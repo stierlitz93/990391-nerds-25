@@ -7,9 +7,10 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-	<header>
+	<header class="catalog-header">
+		<div class="container-header">
 		<a class="header__logo" href="#">
-			<img src="img/nerds-logo.svg" alt="">
+			<img src="img\nerds-logo.svg" alt="">
 		</a>
 		<ul class="header__menu">
 			<li class="header__menu__item"><a class="header__menu__link" href="#">студия</a></li>
@@ -18,24 +19,15 @@
 			<li class="header__menu__item"><a class="header__menu__link" href="#">контакты</a></li>
 		</ul>
 		<a class="header__recycle" href="#"><img src="img/cart-icon.svg" alt="">корзина</a>
+		</div>
 		<h1 class="main__headline">Магазин готовых шаблонов</h1>
 	</header>
-	<main>
-		<div class="main__sort">
-			<h2 class="main__title">сортировать</h2>
-			<a class="main__link" href="#">по цене</a>
-			<a class="main__link" href="#">по типу</a>
-			<a class="main__link" href="#">по названию</a>
-			<a class="main__link" href="#">
-				<img class="main__sort__ico" 	src="img/icon-down-dir.svg" alt="">
-			</a>
-			<a class="main__link" href="#">
-				<img class="main__sort__ico" src="img/icon-up-dir.svg" alt="">
-			</a>
-		</div>
-		<div class="filter">
+	<main class="catalog-main">
+		<div class="container-main">
+		<div class="container-box">
+		<div class="left-part">
 		<form class="filter-form" action="" type="post">
-			<fieldset>
+			<div class="field-form-grid">
 			<legend>Сетка:</legend>
 			<p>
 			<input type="radio" name="grid" id="adaptiv-grid">
@@ -49,9 +41,9 @@
 			<input type="radio" name="grid" id="ruber-grid">
 			<label for="ruber-grid">Резиновая</label>
 			</p>
-			</fieldset>
+			</div>
 
-			<fieldset>
+			<div class="field-form-features">
 			<legend>Особенности:</legend>
 			<p>
 			<input type="checkbox" name="slider" id="features-slider">
@@ -73,60 +65,118 @@
 			<input type="checkbox" name="cart" id="features-cart">
 			<label for="features-cart">Корзина</label>
 			</p>
-			</fieldset>
+			</div>
 			<button class="form-button">показать</button>
 		</form>
 		</div>
+		<div class="right-part">
+		<div class="main__sort">
+			<h2 class="main__title">сортировать</h2>
+			<div class="main__sort-link">
+			<a class="main__link" href="#">по цене</a>
+			<a class="main__link" href="#">по типу</a>
+			<a class="main__link" href="#">по названию</a>
+			<a class="main__link" href="#">
+				<img class="main__sort__ico" 	src="img/icon-down-dir.svg" alt="">
+			</a>
+			<a class="main__link" href="#">
+				<img class="main__sort__ico" src="img/icon-up-dir.svg" alt="">
+			</a>
+			</div>
+		</div>
 			<ul class="main-list">
 				<li class="main-list__item">
+					<div class="main-list__item top-border-container">
+					<ul class="top-border">
+						<li class="top-border-circle"></li>
+						<li class="top-border-circle"></li>
+						<li class="top-border-circle"></li>
+					</ul>
+					</div>
 					<img src="img\img-sedona.jpg" alt="">
-					<div class="main-list__item-hidden">
+					<div class="main-list__item-hidden hidden">
 						<a class="main-list__title-link" href="#">sedona</a>
 						<p class="main-list__description">Информационный сайт  для туристов</p>
 						<a class="main-list__link" href="#">9900р</a>
 					</div>
 				</li>
 				<li class="main-list__item">
+					<div class="main-list__item top-border-container">
+					<ul class="top-border">
+						<li class="top-border-circle"></li>
+						<li class="top-border-circle"></li>
+						<li class="top-border-circle"></li>
+					</ul>
+					</div>
 					<img src="img\img-pink.jpg" alt="">
-					<div class="main-list__item-hidden">
+					<div class="main-list__item-hidden hidden">
 						<a class="main-list__title-link" href="#">pink app</a>
 						<p class="main-list__description">Продуктовый лендинг приложения для iOS и Android</p>
 						<a class="main-list__link" href="#">9900р</a>
 					</div>
 				</li>
 				<li class="main-list__item">
+					<div class="main-list__item top-border-container">
+					<ul class="top-border">
+						<li class="top-border-circle"></li>
+						<li class="top-border-circle"></li>
+						<li class="top-border-circle"></li>
+					</ul>
+					</div>
 					<img src="img\img-barbershop.jpg" alt="">
-					<div class="main-list__item-hidden">
+					<div class="main-list__item-hidden hidden">
 						<a class="main-list__title-link" href="#">barbershop</a>
 						<p class="main-list__description">Сайт салона красоты. Для мужчин, да.</p>
 						<a class="main-list__link" href="#">9900р</a>
 					</div>
 				</li>
 				<li class="main-list__item">
+					<div class="main-list__item top-border-container">
+					<ul class="top-border">
+						<li class="top-border-circle"></li>
+						<li class="top-border-circle"></li>
+						<li class="top-border-circle"></li>
+					</ul>
+					</div>
 					<img src="img\img-mishka.jpg" alt="">
-					<div class="main-list__item-hidden">
+					<div class="main-list__item-hidden hidden">
 						<a class="main-list__title-link" href="#">mishka</a>
 						<p class="main-list__description">Интернет-магазин  вязаных игрушек</p>
 						<a class="main-list__link" href="#">9900р</a>
 					</div>
 				</li>
 				<li class="main-list__item">
+					<div class="main-list__item top-border-container">
+					<ul class="top-border">
+						<li class="top-border-circle"></li>
+						<li class="top-border-circle"></li>
+						<li class="top-border-circle"></li>
+					</ul>
+					</div>
 					<img src="img\img-aplus.jpg" alt="">
-					<div class="main-list__item-hidden">
+					<div class="main-list__item-hidden hidden">
 						<a class="main-list__title-link" href="#">a plus</a>
 						<p class="main-list__description">Лендинг курсов повышения квалификации</p>
 						<a class="main-list__link" href="#">9900р</a>
 					</div>
 				</li>
 				<li class="main-list__item">
+					<div class="main-list__item top-border-container">
+					<ul class="top-border">
+						<li class="top-border-circle"></li>
+						<li class="top-border-circle"></li>
+						<li class="top-border-circle"></li>
+					</ul>
+					</div>
 					<img src="img\img-kvast.jpg" alt="">
-					<div class="main-list__item-hidden">
+					<div class="main-list__item-hidden hidden">
 						<a class="main-list__title-link" href="#">kvast</a>
 						<p class="main-list__description">Промо-сайт производителя  крафтового кваса</p>
 						<a class="main-list__link" href="#">9900р</a>
 					</div>
 				</li>
 			</ul>
+			<div class="pagination-container">
 			<ul class="pagination">
 				<li class="pagination__item">
 					<a class="pagination__link" href="#">1</a>
@@ -138,10 +188,14 @@
 					<a class="pagination__link" href="#">3</a>
 				</li>
 				<li class="pagination__item">
-					<a class="pagination__link" href="#">следующая</a>
+					<a class="pagination__link next-link" href="#">следующая</a>
 				</li>
 			</ul>
-		<div class="feedback">
+			</div>
+		</div>
+		</div>
+		</div>
+		<div class="feedback hidden">
 		<h2>Напишите нам</h2>
 		<form class="feedback-form" action="" method="post">
 			<label>Ваше имя:
@@ -157,38 +211,43 @@
 			<button type="button">закрыть</button> 
 		</form>
 		</div>
+		
 	</main>
 	<footer>
 		<div class="map">
+			<div class="hidden">
 			<address>
 				<h2 class="address__title">nerds design studio</h2>
 				<p class="address__description">191186, Санкт-Петербург,  ул. Б. Конюшенная, д. 19/8  тел.</p>
 				<a class="address__tel" href="#">+7 (999)999-99-99</a>
 				<a class="address__submit" href="#">напишите нам</a>
 			</address>
+			</div>
 		</div>
 		<div class="footer-down">
+			<div class="container-footer">
 			<ul class="social">
-				<li class="social__vk">
+				<li class="social__ico">
 					<a class="social__link" href="#">
 						<img src="img/vk-icon.svg" alt="">
 					</a>
 				</li>
-				<li class="social__fb">
+				<li class="social__ico">
 					<a class="social__link"  href="#">
 						<img src="img/fb-icon.svg" alt="">
 					</a>
 				</li>
-				<li class="social__in">
+				<li class="social__ico">
 					<a class="social__link"  href="#">
 						<img src="img/insta-icon.svg" alt="">
 					</a>
 				</li>
 			</ul>
 			<div class="slogan">
-				<p><strong>Давайте дружить, это выгодно!</strong>
+				<p><strong>Давайте дружить, это выгодно!</strong><br>
 				Скидка 10% для друзей из социальных сетей.</p>
 			</div>
+		</div>
 		</div>
 	</footer>
   </body>
