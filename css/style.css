@@ -261,7 +261,7 @@ a{
 	margin-left: 150px;
 }
 .field-form-grid{
-	margin-top: 265px;
+	margin-top: 265px; /*изменить значение после готовности ползунка*/
 }
 .field-form-features{
 	margin-top: 45px;
