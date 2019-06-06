@@ -78,11 +78,98 @@ a{
 	border-bottom: 2px solid red;
 	margin-bottom: -2px;
 }
+.slider{
+	position: relative;
+}
+.container-slider{
+	width: 1160px;
+}
+.slider-controls{
+	display: flex;
+	position: absolute;
+	left: 46%;
+	bottom: 83px;
+	width: 90px;
+	height: 18px;
+	justify-content: space-between;
+}
+.slider-control-item{
+	display: block;
+	width: 18px;
+	height: 18px;
+	background-color: #fff;
+	position: relative;
+	border-radius: 50%;
+}
+.slider-control-item:hover::after{
+	content: "";
+    width: 6px;
+    height: 6px;
+    background-color: #fff;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    border-radius: 50%;
+    border: 2px solid #c1c1c1;
+}
+.visually-hidden{
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	clip: rect(0 ,0 ,0 ,0);
+}
+.slider-item{
+	display: none;
+	padding: 73px 0 65px 0;
+}
+.slider-item:nth-child(1){
+	display: block;
+}
+.slider-item:nth-child(1){
+	background-image: url("../img/slide1.png");
+	background-repeat: no-repeat;
+	background-position: 93% 11px;
+}
+.slider-item:nth-child(2){
+	background-image: url("../img/slide2.png");
+	background-repeat: no-repeat;
+	background-position: 100% 0;
+}
+.slider-item:nth-child(3){
+	background-image: url("../img/slide3.png");
+	background-repeat: no-repeat;
+	background-position: 100% 20px;
+}
+.slider-item h3{
+	font-size: 55px;
+	line-height: 55px;
+	width: 520px;
+	margin: 0;
+}
+.slider-item p{
+	max-width: 430px;
+	margin-bottom: 40px;
+	margin-top: 25px;
+	line-height: 24px;
+	font-size: 16px;
+	color: #283136;
+}
+.slider-item-button{
+	width: 240px;
+	height: 50px;
+	display: flex;
+    font-size: 16px;
+	line-height: 18px;
+	color: #fff;
+	align-items: center;
+	justify-content: center;
+	border-radius: 3px;
+}
 /* main */
 .main-content{
 	min-height: 1300px;
+	background-color: #fff;
 }
-
 .container-main{
 	display: flex;
 	flex-direction: column;
@@ -129,10 +216,12 @@ a{
 	height: 50px;
 	align-items: center;
 	justify-content: center;
+	border-radius: 3px;
 }
 .red{
 	background-color: #D7373B;
 	opacity: 0.8;
+	text-transform: uppercase;
 }
 .red:hover{
 	opacity: 0.9;
@@ -143,6 +232,7 @@ a{
 .green{
 	background-color: #00AA62;
 	opacity: 0.8;
+	text-transform: uppercase;
 }
 .green:hover{
 	opacity: 0.9;
@@ -153,6 +243,7 @@ a{
 .yellow{
 	background-color: #E5A722;
 	opacity: 0.8;
+	text-transform: uppercase;
 }
 .yellow:hover{
 	opacity: 0.9;
@@ -181,7 +272,6 @@ a{
 	width: 260px;
 	justify-content: space-between;
 }
-
 .social__link{
 	background-color: #E1E1E1;
 	display: flex;
@@ -199,7 +289,6 @@ a{
 .social__link:focus img{
 	opacity: 0.3;
 }
-
 .slogan{
 	margin-left: 140px;
 	text-transform: none;
@@ -251,6 +340,18 @@ a{
 .field-form-grid{
 	margin-top: 265px; /*изменить значение после готовности ползунка*/
 }
+/*
+.field-form-grid label::before{
+	content:"";
+	display:block;
+	width:25px;
+	height:25px;
+	border:3px solid #bbb;
+	position: absolute;
+}
+.field-form-grid label{
+	position: relative;
+}*/
 .field-form-features{
 	margin-top: 45px;
 }
