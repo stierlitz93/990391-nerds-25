@@ -183,6 +183,12 @@ a{
 	justify-content: space-between;
 	margin-top: 80px;
 }
+.container-main::after{
+	content: "";
+	width: 80%;
+	height: 2px;
+	background-color: #F2F2F2;
+}
 .main-job__list{
 	list-style: none;
 	padding: 0;
@@ -252,12 +258,66 @@ a{
 	opacity: 1;
 }
 /* footer */
-.map{
-	min-height: 420px;
-	background-color: lightgrey;
-}
+
 .footer-index{
 	background-color: #fff;
+	display: flex;
+    flex-direction: column;
+	align-items: center;
+}
+.map{
+	min-height: 420px;
+	background-color: #fff;
+	position: relative;
+}
+.map::after{
+	content: "";
+	display: block;
+	position: absolute;
+	background-image: url("../img/map-marker.png");
+	width: 200px;
+    height: 190px;
+    top: 87px;
+    right: 419px;
+}
+.contact-us{
+	position: absolute;
+	width: 215px;
+	height: 220px;
+	background-color: #fff;
+	padding: 50px;
+	bottom: 50px;
+    left: 140px;
+}
+.address__title{
+	font-size: 18px;
+	line-height: 30px;
+	text-transform: uppercase;
+}
+.address__description, 
+.address__tel{
+	font-size: 16px;
+	line-height: 18px;
+	color: #666;
+}
+.address__description{
+	margin-top: 25px;
+	width: 201px;
+}
+.address__tel{
+	margin-top: 18px;
+}
+.address__submit{
+	display: flex;
+    font-size: 16px;
+    line-height: 18px;
+    color: #fff;
+    width: 220px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+	border-radius: 3px;
+	margin-top: 37px;
 }
 .footer-down{
 	display: flex;
