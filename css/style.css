@@ -406,7 +406,80 @@ a{
 	display: flex;
     flex-direction: column;
 	align-items: center;
+	position: relative;
 }
+.footer-feedback{
+	position: absolute;
+	z-index: 1;
+	background-color: #fff;
+	border: 2px solid #f1f1f1;
+	width: 960px;
+	height: 590px;
+	bottom: 180px;
+}
+.footer-feedback-title{
+	font-size: 45px;
+	line-height: 45px;
+	margin: 0;
+    margin-top: 75px;
+    margin-left: 100px;
+}
+.feedback-form{
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+.feedback-form-item{
+	display: flex;
+    flex-direction: column;
+}
+.feedback-form-box{
+	display: flex;
+    justify-content: space-between;
+    width: 760px;
+}
+.feedback-form-item input{
+	width: 360px;
+	height: 50px;
+}
+.feedback-form-item textarea{
+	width: 760px;
+	height: 120px;
+}
+.feedback-form-item label{
+	font-size: 16px;
+	line-height: 18px;
+	font-weight: bold;
+	margin-bottom: 15px;
+}
+.footer-feedback-submit{
+	align-self: flex-start;
+    margin-left: 97px;
+	width: 260px;
+	height: 50px;
+	border: none;
+	border-radius: 4px;
+	font-size: 16px;
+	line-height: 18px;
+	text-transform: uppercase;
+	color: #fff;
+	margin-top: 30px;
+}
+/*
+.feedback-form label{
+	font-size: 16px;
+	line-height: 18px;
+	font-weight: bold;
+}
+.feedback-form input[type="text"]{
+	width: 360px;
+	height: 50px;
+}
+.feedback-form textarea{
+	width: 760px;
+	height: 120px;
+}*/
 .map{
 	min-height: 420px;
 	background-color: #fff;
@@ -617,7 +690,7 @@ a{
 	margin-left: 10px;
 }
 .field-form-grid{
-	margin-top: 53px; /*изменить значение после готовности ползунка*/
+	margin-top: 53px;
 }
 .field-form-grid-pick{
 	margin: 0;
