@@ -183,12 +183,6 @@ a{
 	justify-content: space-between;
 	margin-top: 80px;
 }
-.container-main::after{
-	content: "";
-	width: 80%;
-	height: 2px;
-	background-color: #F2F2F2;
-}
 .main-job__list{
 	list-style: none;
 	padding: 0;
@@ -256,6 +250,101 @@ a{
 }
 .yellow:focus{
 	opacity: 1;
+}
+
+.main-about{
+	display: flex;
+	width: 1160px;
+}
+.about-idea{
+	margin: 0;
+    margin-top: 80px;
+}
+.about-title{
+	font-size: 45px;
+	line-height: 45px;
+	width: 650px;
+	margin: 0;
+}
+.about-description{
+	font-size: 16px;
+	line-height: 24px;
+	color: #283136;
+	width: 650px;
+	margin: 0;
+    margin-top: 31px;
+}
+.about-devop{
+	font-size: 16px;
+	line-height: 24px;
+	color: #283136;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin: 0;
+    margin-top: 39px;
+}
+.about-devop-list{
+	margin-top: 25px;
+    margin-left: 36px;
+}
+.about-devop-item{
+	font-size: 16px;
+	line-height: 24px;
+	color: #283136;
+	margin-bottom: 23px;
+	position: relative;
+}
+.about-devop-item::before{
+	content: "";
+	width: 25px;
+	height: 2px;
+	background-color: #D7373B;
+	position: absolute;
+    left: -35px;
+    top: 11px;
+}
+.about-date{
+	margin-left: auto;
+    margin-top: 45px;
+}
+.about-slogan{
+	font-size: 16px;
+	line-height: 24px;
+	color: #000;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin: 0;
+    margin-top: 31px;
+    margin-left: 16px;
+}
+.about-facts{
+	display: flex;
+    width: 345px;
+    justify-content: space-between;
+    margin-top: 13px;
+    margin-left: 3px;
+}
+.about-facts-item{
+
+}
+.about-facts-num{
+	font-size: 45px;
+	line-height: 45px;
+	color: #000;
+	font-weight: bold;
+    margin: 0;
+    margin-top: 20px;
+}
+.about-facts-num sup{
+	font-size: 25px;
+}
+.about-facts-text{
+	font-size: 16px;
+	line-height: 18px;
+	color: #283136;
+	width: 110px;
+    margin: 0;
+    margin-top: 20px;
 }
 /* footer */
 
