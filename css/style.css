@@ -466,20 +466,34 @@ a{
 	color: #fff;
 	margin-top: 30px;
 }
-/*
-.feedback-form label{
-	font-size: 16px;
-	line-height: 18px;
-	font-weight: bold;
+.footer-feedback-close{
+	position: absolute;
+    width: 28px;
+    height: 4px;
+    background-color: #FB565A;
+    border: none;
+    right: 70px;
+    top: 70px;
+	transform: rotate(45deg);
+	opacity: 0.4;
 }
-.feedback-form input[type="text"]{
-	width: 360px;
-	height: 50px;
+.footer-feedback-close:hover{
+	opacity: 1;
 }
-.feedback-form textarea{
-	width: 760px;
-	height: 120px;
-}*/
+.footer-feedback-close:focus{
+	opacity: 0.1;
+}
+.footer-feedback-close::before{
+	content: "";
+	position: absolute;
+    width: 28px;
+    height: 4px;
+    background-color: #FB565A;
+    border: none;
+    right: 0px;
+    top: 0px;
+	transform: rotate(90deg);
+}
 .map{
 	min-height: 420px;
 	background-color: #fff;
