@@ -540,8 +540,84 @@ a{
 	margin-left: 154px;
 }
 /*фильтр*/
+.range-controls{
+	height: 40px;
+	background-color: #f1f1f1;
+	border-radius: 5px;
+	padding-top: 38px;
+	padding-left: 20px;
+	padding-right: 20px;
+	width: 220px;
+	position: relative;
+	top: 49px;
+    left: 11px;
+}
+.range-control-scale{
+	height: 2px;
+	background-color: #d7dcde;
+	position: relative;
+}
+.range-control-scale::before{
+	content: "";
+	position: absolute;
+	height: 2px;
+	background-color: #00ca74;
+	width:70%;
+}
+.range-control-toggle{
+	position: relative;
+	cursor: pointer;
+}
+.range-control-toggle::before{
+	content: "";
+	width: 4px;
+	height: 4px;
+	border: 8px solid #fff;
+	border-radius: 50%;
+	box-shadow: 0 2px 1px 0 #cfcfcf;
+	position: absolute;
+	background-color: #ababab;
+	top: -11px;
+    left: -9px;
+}
+.range-control-toggle::after{
+	content: "";
+	width: 4px;
+	height: 4px;
+	border: 8px solid #fff;
+	border-radius: 50%;
+	box-shadow: 0 2px 1px 0 #cfcfcf;
+	position: absolute;
+	background-color: #ababab;
+	top: -11px;
+    right: 57px;
+}
+.price-controls{
+	margin-top: 62px;
+	margin-left: 11px;
+	width: 260px;
+}
+.price-control-max{
+	margin-left: 29px;
+}
+.price-controls label{
+	font-size: 16px;
+	line-height: 22px;
+	text-transform: uppercase;
+}
+.price-controls input{
+	width: 80px;
+	height: 40px;
+	border-radius: 4px;
+	background-color: #f1f1f1;
+	text-align: center;
+	font-size: 16px;
+	color: #283136;
+	border:none;
+	margin-left: 10px;
+}
 .field-form-grid{
-	margin-top: 265px; /*изменить значение после готовности ползунка*/
+	margin-top: 53px; /*изменить значение после готовности ползунка*/
 }
 .field-form-grid-pick{
 	margin: 0;
@@ -632,22 +708,13 @@ a{
 	line-height: 30px;
 	font-weight: bold;
 	color: #000;
+	margin-left: 8px;
 }
 .filter-form label{
 	font-size: 16px;
 	line-height: 20px;
-	text-transform: none;
 	color: #283136;
 }
-/*
-.filter-form input{
-	opacity: 0.4;
-	background-color: #4D4D4D;
-}
-.filter-form input:hover{
-	opacity: 1;
-	background-color: #4D4D4D;
-}*/
 .form-button{
 	font-size: 22px;
 	line-height: 18px;
@@ -658,6 +725,7 @@ a{
 	border: none;
 	padding: 0;
 	border-radius: 3px;
+	margin-left: 11px;
 }
 .form-button:hover{
 	background-color: #dfdfdf;
