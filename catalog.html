@@ -39,40 +39,40 @@
 					<form class="filter-form" action="" type="post">
 						<div class="field-form-grid">
 							<legend>Сетка:</legend>
-							<p>
-								<input type="radio" name="grid" id="adaptiv-grid">
+							<p class="field-form-grid-pick">
+								<input class="visually-hidden" type="radio" name="grid" id="adaptiv-grid">
 								<label for="adaptiv-grid">Адаптивная</label>
 							</p>
-							<p>
-								<input type="radio" name="grid" id="fix-grid">
+							<p class="field-form-grid-pick">
+								<input class="visually-hidden" type="radio" name="grid" id="fix-grid">
 								<label for="fix-grid">Фиксированная</label>
 							</p>
-							<p>
-								<input type="radio" name="grid" id="ruber-grid">
+							<p class="field-form-grid-pick">
+								<input disabled class="visually-hidden" type="radio" name="grid" id="ruber-grid">
 								<label for="ruber-grid">Резиновая</label>
 							</p>
 						</div>
 
 						<div class="field-form-features">
 							<legend>Особенности:</legend>
-							<p>
-								<input type="checkbox" name="slider" id="features-slider">
+							<p class="field-form-features-pick">
+								<input disabled class="visually-hidden" type="checkbox" name="slider" id="features-slider">
 								<label for="features-slider">Слайдер</label>
 							</p>
-							<p>
-								<input type="checkbox" name="advantage" id="features-advantage">
+							<p class="field-form-features-pick">
+								<input class="visually-hidden" type="checkbox" name="advantage" id="features-advantage">
 								<label for="features-advantage">Блок преимуществ</label>
 							</p>
-							<p>
-								<input type="checkbox" name="news" id="features-news">
+							<p class="field-form-features-pick">
+								<input class="visually-hidden" type="checkbox" name="news" id="features-news">
 								<label for="features-news">Новости</label>
 							</p>
-							<p>
-								<input type="checkbox" name="galery" id="features-galery">
+							<p class="field-form-features-pick">
+								<input class="visually-hidden" type="checkbox" name="galery" id="features-galery">
 								<label for="features-galery">Галерея</label>
 							</p>
-							<p>
-								<input type="checkbox" name="cart" id="features-cart">
+							<p class="field-form-features-pick">
+								<input class="visually-hidden" type="checkbox" name="cart" id="features-cart">
 								<label for="features-cart">Корзина</label>
 							</p>
 						</div>
@@ -191,15 +191,14 @@
 			</form>
 		</div>
 	</main>
-	<footer>
+	<footer class="footer-index">
 		<div class="map">
-			<div class="hidden">
-				<address>
-					<h2 class="address__title">nerds design studio</h2>
-					<p class="address__description">191186, Санкт-Петербург,  ул. Б. Конюшенная, д. 19/8  тел.</p>
-					<a class="address__tel" href="#">+7 (999)999-99-99</a>
-					<a class="address__submit" href="#">напишите нам</a>
-				</address>
+			<img src="img/map.png" alt="Карта">
+			<div class="contact-us reset-style-size">
+				<h2 class="address__title  reset-style-size">nerds design studio</h2>
+				<p class="address__description  reset-style-size">191186, Санкт-Петербург,  ул. Б. Конюшенная, д. 19/8</p>
+				<p class="address__tel  reset-style-size" >тел. +7 (999)999-99-99</p>
+				<a class="address__submit red" href="#">напишите нам</a>
 			</div>
 		</div>
 		<div class="footer-down">
