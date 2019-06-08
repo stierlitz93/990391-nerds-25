@@ -416,6 +416,7 @@ a{
 	width: 960px;
 	height: 590px;
 	bottom: 180px;
+	box-shadow: 0 5px 40px 6px #000;
 }
 .footer-feedback-title{
 	font-size: 45px;
