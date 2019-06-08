@@ -943,9 +943,13 @@ a{
 	font-size: 16px;
 	line-height: 18px;
 	color: #666;
-	width: 240px;
+	width: 210px;
 	text-align: center;
-	margin-bottom: 0;
+	margin: 0;
+	overflow: auto;
+    height: 60px;
+    position: absolute;
+    bottom: 100px;
 }
 .main-list__link{
 	font-size: 16px;
@@ -956,7 +960,9 @@ a{
     text-align: center;
     padding: 16px 0;
     margin-top: 28px;
-    border-radius: 3px;
+	border-radius: 3px;
+	position: absolute;
+    bottom: 44px;
 }
 .main-list__link:hover{
 	background-color: #e74246;
