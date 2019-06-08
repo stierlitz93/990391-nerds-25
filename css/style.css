@@ -421,6 +421,10 @@ a{
 	height: 590px;
 	bottom: 180px;
 	box-shadow: 0 5px 40px 6px #000;
+	display: none;
+}
+.feedback-show{
+	display: block;
 }
 .footer-feedback-title{
 	font-size: 45px;
@@ -932,6 +936,7 @@ a{
 	font-weight: bold;
 	line-height: 30px;
 	color: #000;
+	margin-left: -2px;
 }
 .main-list__title-link:hover{
 	color: #fb565a;
@@ -943,13 +948,14 @@ a{
 	font-size: 16px;
 	line-height: 18px;
 	color: #666;
-	width: 210px;
+	width: 208px;
 	text-align: center;
 	margin: 0;
 	overflow: auto;
     height: 60px;
     position: absolute;
-    bottom: 100px;
+	bottom: 100px;
+	left: 77px;
 }
 .main-list__link{
 	font-size: 16px;
@@ -962,7 +968,8 @@ a{
     margin-top: 28px;
 	border-radius: 3px;
 	position: absolute;
-    bottom: 44px;
+	bottom: 44px;
+	text-transform: uppercase;
 }
 .main-list__link:hover{
 	background-color: #e74246;
@@ -1008,7 +1015,4 @@ a{
 .next-link{
 	width: 260px;
     text-align: center;
-}
-.next-link:active{
-
 }
