@@ -468,6 +468,10 @@ a{
 .feedback-error{
 	animation: shake 0.6s;
 }
+.feedback-invalid{
+	border-color: #E74246;
+	color: #E74246;
+}
 .footer-feedback-title{
 	font-size: 45px;
 	line-height: 45px;
@@ -480,6 +484,23 @@ a{
     flex-direction: column;
     align-items: center;
     margin-top: 30px;
+}
+.feedback-form input,
+.feedback-form textarea{
+	border-color: #d7dcde;
+	color: #d7dcde;
+	font-size: 16px;
+	line-height: 18px;
+}
+.feedback-form input:hover,
+.feedback-form textarea:hover{
+	border-color: #B4B9BB;
+	color: #B4B9BB;
+}
+.feedback-form input:focus,
+.feedback-form textarea:focus{
+	border-color: #000;
+	color: #000;
 }
 .feedback-form-item{
 	display: flex;
@@ -497,6 +518,7 @@ a{
 .feedback-form-item textarea{
 	width: 760px;
 	height: 120px;
+	resize: none;
 }
 .feedback-form-item label{
 	font-size: 16px;
@@ -645,7 +667,8 @@ a{
     width: 78px;
     height: 78px;
     border-radius: 50%;
-    justify-content: center;
+	justify-content: center;
+	align-items: center;
 }
 .social__link:hover{
 	background-color: #E74246;
