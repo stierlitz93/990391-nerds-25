@@ -20,6 +20,44 @@ a{
 	height: 1px;
 	clip: rect(0 ,0 ,0 ,0);
 }
+
+@keyframes bounce {
+	0% {
+		transform: translateY(-1000px);
+	}
+	70% {
+		transform: translateY(30px);
+	}
+	90% {
+		transform: translateY(-10px);
+	}
+	100% {
+		transform: translateY(0);
+	}
+}
+
+@keyframes shake {
+	0%,
+	100% {
+		transform: translateX(0);
+	}
+
+	10%,
+	30%,
+	50%,
+	70%,
+	90% {
+		transform: translateX(-10px);
+	}
+
+	20%,
+	40%,
+	60%,
+	80% {
+		transform: translateX(10px);
+	}
+}
+
 /* header */
 .main-header{
 	display: flex;
@@ -425,6 +463,10 @@ a{
 }
 .feedback-show{
 	display: block;
+	animation: bounce 0.6s;
+}
+.feedback-error{
+	animation: shake 0.6s;
 }
 .footer-feedback-title{
 	font-size: 45px;
@@ -477,14 +519,14 @@ a{
 }
 .footer-feedback-close{
 	position: absolute;
-    width: 28px;
-    height: 4px;
-    background-color: #FB565A;
+    width: 26px;
+    height: 26px;
+    background-color: #fff;
     border: none;
-    right: 70px;
-    top: 70px;
-	transform: rotate(45deg);
+    right: 50px;
+    top: 50px;
 	opacity: 0.4;
+	cursor: pointer;
 }
 .footer-feedback-close:hover{
 	opacity: 1;
@@ -494,19 +536,38 @@ a{
 }
 .footer-feedback-close::before{
 	content: "";
-	position: absolute;
+    position: absolute;
     width: 28px;
     height: 4px;
     background-color: #FB565A;
-    border: none;
     right: 0px;
-    top: 0px;
-	transform: rotate(90deg);
+    transform: rotate(45deg);
+}
+.footer-feedback-close::after{
+	content: "";
+    position: absolute;
+    width: 28px;
+    height: 4px;
+    background-color: #FB565A;
+    right: 0px;
+    transform: rotate(-45deg);
 }
 .map{
 	min-height: 420px;
 	background-color: #fff;
 	position: relative;
+}
+.map iframe{
+	position: relative;
+	z-index: 2;
+	border: none;
+	z-index: 1;
+}
+.map img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin: 0;
 }
 .map::after{
 	content: "";
@@ -516,7 +577,8 @@ a{
 	width: 200px;
     height: 190px;
     top: 89px;
-    right: 420px;
+	right: 420px;
+	z-index: 1;
 }
 .contact-us{
 	position: absolute;
@@ -525,7 +587,8 @@ a{
     background-color: #fff;
     padding: 50px;
     bottom: 58px;
-    left: 140px;
+	left: 140px;
+	z-index: 1;
 }
 .address__title{
 	font-size: 18px;
