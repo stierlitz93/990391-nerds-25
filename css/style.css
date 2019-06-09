@@ -23,7 +23,7 @@ a{
 
 @keyframes bounce {
 	0% {
-		transform: translateY(-1000px);
+		transform: translateY(1000px);
 	}
 	70% {
 		transform: translateY(30px);
@@ -452,7 +452,7 @@ a{
 }
 .footer-feedback{
 	position: absolute;
-	z-index: 1;
+	z-index: 2;
 	background-color: #fff;
 	border: 2px solid #f1f1f1;
 	width: 960px;
