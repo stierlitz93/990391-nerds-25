@@ -729,7 +729,7 @@ a{
 	margin-left: 154px;
 }
 /*фильтр*/
-.field-form-cost legend{
+.field-form-cost .legend{
 	letter-spacing: 0.6px;
 }
 .range-controls{
@@ -894,7 +894,7 @@ a{
 .field-form-features-pick input:disabled + label::after{
 	opacity: 0.1;
 }
-.filter-form legend{
+.legend{
 	font-size: 18px;
 	text-transform:uppercase;
 	line-height: 30px;
