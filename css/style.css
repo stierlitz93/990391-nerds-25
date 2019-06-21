@@ -455,7 +455,8 @@ a{
     border: 2px solid #f1f1f1;
     width: 956px;
     height: 586px;
-    bottom: 190px;
+	bottom: 189px;
+	right: 240px;/**/
     box-shadow: 0 5px 40px 6px #000;
     display: none;
 }
@@ -485,7 +486,6 @@ a{
 }
 .feedback-form input,
 .feedback-form textarea{
-	border-color: #d7dcde;
 	color: #d7dcde;
 	font-size: 16px;
 	line-height: 18px;
@@ -510,16 +510,24 @@ a{
     width: 760px;
 }
 .feedback-form-item input{
-	width: 356px;
+	width: 332px;
     height: 43px;
+	padding: 2px 12px;
+	border: none;
+	border: 2px solid #d7dcde;
+    border-radius: 4px;
 }
 .feedback-form-item-text{
 	margin-top: 19px;
 }
 .feedback-form-item textarea{
-	width: 754px;
-    height: 111px;
-    resize: none;
+	width: 730px;
+    height: 87px;
+    padding: 12px 12px;
+	resize: none;
+	border: none;
+	border: 2px solid #d7dcde;
+    border-radius: 4px;
 }
 .feedback-form-item label{
 	font-size: 16px;
@@ -538,7 +546,7 @@ a{
 	line-height: 18px;
 	text-transform: uppercase;
 	color: #fff;
-	margin-top: 32px;
+	margin-top: 35px;
 }
 .footer-feedback-close{
 	position: absolute;
@@ -650,8 +658,10 @@ a{
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	min-height: 225px;
-	margin-left: -220px;
+	height: 225px;
+	/*width: 941px;
+	margin-left: -220px;*//**/
+	margin-left: -142px;
     margin-top: -5px;
 }
 .social{
@@ -685,7 +695,8 @@ a{
 	font-size: 16px;
 	line-height: 37px;
 	color: #444;
-	width: 542px;
+	width: 618px;
+	/*width: 542px;*//**/
 }
 .slogan-header{
 	display: block;
@@ -1056,6 +1067,7 @@ a{
 	border-radius: 3px;
 	position: absolute;
 	bottom: 44px;
+	left: 80px;/**/
 	text-transform: uppercase;
 }
 .main-list__link:hover{
